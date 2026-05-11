@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Speakers — Art &amp; Culture Tutorial @ ICMR 2026</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #333;
+    }
+    hr {
+      margin: 20px 0;
+    }
+    .speaker-card {
+      display: flex;
+      gap: 24px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.08);
+      padding: 24px;
+      margin-bottom: 28px;
+      align-items: flex-start;
+    }
+    .speaker-card .photo {
+      flex-shrink: 0;
+      text-align: center;
+      width: 120px;
+    }
+    .speaker-card .photo img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ddd;
+    }
+    .speaker-card .photo .name {
+      font-size: 15px;
+      font-weight: 700;
+      margin-top: 8px;
+      color: #222;
+    }
+    .speaker-card .photo .affil {
+      font-size: 13px;
+      color: #666;
+      margin-top: 2px;
+    }
+    .speaker-card .details {
+      flex: 1;
+    }
+    .speaker-card .talk-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #2c1654;
+      margin-bottom: 10px;
+    }
+    .speaker-card .abstract-label,
+    .speaker-card .bio-label {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #888;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+    .speaker-card p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.65;
+      margin: 0;
+    }
+    .tbd {
+      color: #aaa;
+      font-style: italic;
+    }
+    @media (max-width: 600px) {
+      .speaker-card {
+        flex-direction: column;
+        align-items: center;
+      }
+      .speaker-card .details {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <h1>Speakers</h1>
+      <hr>
+
+      <!-- Nanne van Noord -->
+      <div class="speaker-card">
+        <div class="photo">
+          <img src="img/people/nanne.jpg" alt="Nanne van Noord">
+          <div class="name">Nanne van Noord</div>
+          <div class="affil">University of Amsterdam</div>
+        </div>
+        <div class="details">
+          <div class="talk-title"><span class="tbd">Title TBD</span> — Iconicity</div>
+          <div class="abstract-label">Abstract</div>
+          <p class="tbd">Abstract coming soon.</p>
+          <div class="bio-label">Bio</div>
+          <p>Dr. Nanne van Noord is Assistant Professor at the Multimedia Analytics lab of the University of Amsterdam. His research lies at the intersection of Multimodal AI and Visual Culture, with the aim of integrating equitable visual cultural understanding into AI models to bridge the gap between humanistic and algorithmic inquiry.</p>
+        </div>
+      </div>
+
+      <!-- Noa Garcia -->
+      <div class="speaker-card">
+        <div class="photo">
+          <img src="img/people/noa.jpg" alt="Noa Garcia">
+          <div class="name">Noa Garcia</div>
+          <div class="affil">The University of Osaka</div>
+        </div>
+        <div class="details">
+          <div class="talk-title">Instance-level Recognition in the Cultural Heritage Domain</div>
+          <div class="abstract-label">Abstract</div>
+          <p>Instance-level recognition (ILR) distinguishes individual objects rather than just broad categories, offering powerful applications for understanding art and culture. However, ILR faces two fundamental challenges: the scarcity of large-scale annotated datasets due to the fine-grained nature of the task, and the difficulty of handling distribution shifts between controlled gallery images and unstructured visitor photographs. This talk addresses these challenges by examining recent advances along two complementary fronts. First, we explore a large-scale benchmark built from The Met museum's open-access collection, featuring over 224k individual exhibits for training under studio conditions, while testing on noisy visitor-taken photos and out-of-distribution images. The benchmark shows that combining self-supervised and supervised contrastive learning for non-parametric classification is a promising direction. Second, we examine a novel synthetic data generation approach that bypasses manual annotation entirely: given only target domain names, it synthesizes diverse object instances without any real images. Fine-tuning foundation vision models on this synthetic data improves retrieval across multiple ILR benchmarks, offering an efficient and scalable alternative to extensive data collection. Together, these perspectives show how the field is moving from curated benchmarks toward flexible, domain-independent ILR systems, unlocking real-world applications for cultural heritage and beyond.</p>
+          <div class="bio-label">Bio</div>
+          <p>Noa Garcia is an Associate Professor at the Institute for Advanced Co-Creation Studies and D3 Center, The University of Osaka (Japan). She earned her Ph.D. in Computer Science from Aston University (UK), specializing in multimodal retrieval and instance-level recognition. Her research sits at the intersection of computer vision, natural language processing, fairness, and art. Her recent work includes investigating demographic bias in computer vision, analyzing visual datasets, and exploring how generative models can reinforce social stereotypes.</p>
+        </div>
+      </div>
+
+      <!-- Shuai Wang -->
+      <div class="speaker-card">
+        <div class="photo">
+          <img src="img/people/shuai.jpg" alt="Shuai Wang">
+          <div class="name">Shuai Wang</div>
+          <div class="affil">University of Amsterdam</div>
+        </div>
+        <div class="details">
+          <div class="talk-title">Understanding Visual Art with Structured Knowledge and Agentic Retrieval</div>
+          <div class="abstract-label">Abstract</div>
+          <p>Understanding fine art is a knowledge-intensive, multimodal task that requires reasoning over visual content, cultural history, artistic style, and symbolic meaning — far beyond what standard image captioning or retrieval systems can provide. This talk presents two complementary frameworks that tackle this challenge through structured knowledge retrieval and agentic reasoning.</p>
+          <p style="margin-top:8px;">The first framework, ArtRAG (ACM MM 2025), integrates a domain-specific art knowledge graph into a retrieval-augmented generation pipeline, enabling contextually grounded, multi-perspective artwork explanations without task-specific training. The second framework, A-MAR (ICMR 2026), extends this with an explicit reasoning and planning stage that conditions retrieval on structured, step-wise evidence requirements, moving beyond static retrieval toward interpretable, goal-driven multimodal reasoning.</p>
+          <p style="margin-top:8px;">Together, these works chart a path toward explainable AI systems for cultural industry applications, with relevance to digital humanities, museum technology, and multimodal AI research.</p>
+          <div class="bio-label">Bio</div>
+          <p>Shuai Wang is a PhD candidate at the University of Amsterdam, jointly in the MultiX lab (Informatics Institute) and Amsterdam Business School. His research specializes in Multimodal Agent and Agentic AI with a focus on applied research to solve complex, real-world business and cultural industry challenges.</p>
+        </div>
+      </div>
+
+      <!-- Thanos Efthymiou -->
+      <div class="speaker-card">
+        <div class="photo">
+          <img src="img/people/thanos.jpg" alt="Athanasios Efthymiou">
+          <div class="name">Thanos Efthymiou</div>
+          <div class="affil">University of Amsterdam</div>
+        </div>
+        <div class="details">
+          <div class="talk-title">Multimodal Representations for Fine Art Analysis</div>
+          <div class="abstract-label">Abstract</div>
+          <p>Multimodal representation learning offers a principled approach to fine art analysis, where artworks are associated with visual, textual, and relational information. This tutorial presents a line of work that develops representations of artworks by jointly modeling these complementary sources, moving beyond approaches based solely on visual features. We examine how such representations capture both visual characteristics and relationships between artworks and artists, enabling tasks such as similarity modeling, retrieval, and the analysis of artistic production over time. By integrating multiple modalities into a unified representation, this approach allows artworks to be analyzed not only in terms of their visual properties, but also in relation to other works and within the broader structure of artistic production. The tutorial provides a technical perspective on learning and using such representations for fine art analysis.</p>
+          <div class="bio-label">Bio</div>
+          <p>Athanasios Efthymiou is a postdoctoral researcher at the University of Amsterdam. His research lies at the intersection of multimodal representation learning and computational fine art analysis, focusing on methods for integrating visual, textual, and relational information to represent artworks and analyze patterns of artistic production.</p>
+        </div>
+      </div>
+
+      <!-- Tiancheng Liu -->
+      <div class="speaker-card">
+        <div class="photo">
+          <img src="img/people/tiancheng.jpg" alt="Tiancheng Liu">
+          <div class="name">Tiancheng Liu</div>
+          <div class="affil">HKUST (Guangzhou) / UvA</div>
+        </div>
+        <div class="details">
+          <div class="talk-title">Computational Chinese Calligraphy: From Evaluating the Work, to Sensing the Process, to Joining the Practice</div>
+          <div class="abstract-label">Abstract</div>
+          <p>Chinese calligraphy, as known as Shufa, the way to write characters, presents a rich case for multimodal art understanding. It encodes visual structure, linguistic content, and traces of the bodily movement that produced it, yet these modalities are rarely studied together. This tutorial examines computational approaches to calligraphy along three progressive layers. The first layer addresses the finished work, showing how structural aesthetic features of regular script and seal carving can be quantified and connected to human perceptual preferences. The second layer moves beneath the surface to the writing process, exploring how cross-modal methods can recover implicit micro-actions such as brush pressure, pause, and wrist angle from the visual trace alone. The third layer considers the machine as a participant in calligraphic practice, surveying style transfer and generative approaches from early pix2pix methods to recent diffusion models, and discussing emotion-driven generation that translates poetic sentiment into expressive strokes. Together, these layers illustrate how calligraphy can serve as a testbed for multimodal representation, cross-modal translation, and human-AI co-creation in the cultural domain.</p>
+          <div class="bio-label">Bio</div>
+          <p>Tiancheng Liu is a PhD candidate in Computational Media and Arts at the Hong Kong University of Science and Technology (Guangzhou) and a visiting researcher in the MultiX Lab at the University of Amsterdam. His research lies at the intersection of computational aesthetics, embodied interaction, and creative AI, with a focus on computational approaches to aesthetic and multimedia analysis in visual and cultural works, particularly Chinese calligraphy. His work takes the form of both published research and exhibited artworks.</p>
+        </div>
+      </div>
+
+      <!-- Ludovica Schaerf -->
+      <div class="speaker-card">
+        <div class="photo">
+          <img src="img/people/ludovica.jpg" alt="Ludovica Schaerf">
+          <div class="name">Ludovica Schaerf</div>
+          <div class="affil">MPG / University of Zurich</div>
+        </div>
+        <div class="details">
+          <div class="talk-title"><span class="tbd">Title TBD</span> — On Sheaf</div>
+          <div class="abstract-label">Abstract</div>
+          <p class="tbd">Abstract coming soon.</p>
+          <div class="bio-label">Bio</div>
+          <p>Ludovica Schaerf is a PhD student in Digital Visual Studies between the Max Planck Society (MPG) and the University of Zurich (UZH). Her interests lie in interdisciplinary research at the intersection of the Arts, Artificial Intelligence, and Philosophy. Her research focuses on understanding representations in generative vision models from a technical and media-theoretic perspective.</p>
+        </div>
+      </div>
+
+      <!-- Piera Riccio -->
+      <div class="speaker-card">
+        <div class="photo">
+          <img src="img/user.png" alt="Piera Riccio" style="background:#e8e8e8;">
+          <div class="name">Piera Riccio</div>
+          <div class="affil" class="tbd">TBD</div>
+        </div>
+        <div class="details">
+          <div class="talk-title"><span class="tbd">Title TBD</span> — On Imageset2text</div>
+          <div class="abstract-label">Abstract</div>
+          <p class="tbd">Abstract coming soon.</p>
+          <div class="bio-label">Bio</div>
+          <p class="tbd">Bio coming soon.</p>
+        </div>
+      </div>
+
+      <!-- Selina Khan -->
+      <div class="speaker-card">
+        <div class="photo">
+          <img src="img/user.png" alt="Selina Khan" style="background:#e8e8e8;">
+          <div class="name">Selina Khan</div>
+          <div class="affil">University of Amsterdam</div>
+        </div>
+        <div class="details">
+          <div class="talk-title"><span class="tbd">Title TBD</span> — On Gender Dataset</div>
+          <div class="abstract-label">Abstract</div>
+          <p class="tbd">Abstract coming soon.</p>
+          <div class="bio-label">Bio</div>
+          <p>Selina Khan is a PhD student at the University of Amsterdam at the Multimedia Analytics Lab. Her research focuses on the use of interactive technologies for discovering biases in cultural heritage collections. Her research interests include the challenges of capturing nuanced, context-rich information from the artistic domain in AI systems and exploring how such technologies can deepen our understanding of art while respecting its subjectivity and cultural significance.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-container"></div>
+</body>
+
+</html>

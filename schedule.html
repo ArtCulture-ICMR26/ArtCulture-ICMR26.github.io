@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Schedule — Art &amp; Culture Tutorial @ ICMR 2026</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <style>
+    .content-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #333;
+    }
+    hr {
+      margin: 20px auto;
+      width: 60%;
+      border: 1px solid #ddd;
+    }
+    .location-container {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      color: #555;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .location-room {
+      font-weight: bold;
+      color: #333;
+      padding: 5px 10px;
+    }
+    .location-venue {
+      padding: 5px 10px;
+    }
+    .location-container a {
+      color: #555;
+      text-decoration: none;
+    }
+    .location-container a:hover {
+      text-decoration: underline;
+    }
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .schedule-table th, .schedule-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+    .schedule-table th {
+      background: #f3f3f3;
+      font-weight: bold;
+      text-align: center;
+      width: 18%;
+    }
+    .session-title {
+      font-weight: bold;
+      font-size: 1.05em;
+      display: block;
+      margin-bottom: 4px;
+      color: #2c1654;
+    }
+    .session-block-label {
+      display: inline-block;
+      font-size: 11px;
+      background: #2c1654;
+      color: #fff;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .talk-title {
+      font-style: italic;
+      display: block;
+      margin-top: 6px;
+      color: #444;
+    }
+    .speakers {
+      display: block;
+      margin-top: 4px;
+      font-weight: 600;
+      color: #333;
+    }
+    .duration {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.88em;
+      color: #888;
+    }
+    .break-row td {
+      background: #f9f5ff;
+      color: #888;
+      font-style: italic;
+      text-align: center;
+    }
+    .dinner-row td {
+      background: #fff8f0;
+      color: #888;
+      font-style: italic;
+      text-align: center;
+    }
+    .tbd {
+      color: #bbb;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <h1>Tutorial Programme</h1>
+
+      <div class="location-container">
+        <span class="location-room">
+          <i class="fas fa-calendar-alt"></i> &nbsp;June 16, 2026 &mdash; All Day
+        </span>
+        <span class="location-venue">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/search/?api=1&query=KIT+Royal+Tropical+Institute+Amsterdam" target="_blank" rel="noopener noreferrer">
+            KIT Royal Tropical Institute, Amsterdam
+          </a>
+        </span>
+      </div>
+
+      <hr>
+
+      <table class="schedule-table">
+        <tr>
+          <th>Time</th>
+          <th>Event</th>
+        </tr>
+
+        <!-- Opening -->
+        <tr>
+          <td>09:00 – 09:30</td>
+          <td>
+            <strong class="session-title">Welcome &amp; Introduction</strong>
+            <span class="speakers">Nanne van Noord</span>
+          </td>
+        </tr>
+
+        <!-- Block 1 -->
+        <tr>
+          <td>09:30 – 10:15</td>
+          <td>
+            <span class="session-block-label">Block 1 — Talk 1</span>
+            <strong class="session-title tbd">Speaker TBD</strong>
+            <em class="talk-title tbd">Title TBD</em>
+            <span class="duration">30 min + Q&amp;A</span>
+          </td>
+        </tr>
+        <tr>
+          <td>10:15 – 11:00</td>
+          <td>
+            <span class="session-block-label">Block 1 — Talk 2</span>
+            <strong class="session-title tbd">Speaker TBD</strong>
+            <em class="talk-title tbd">Title TBD</em>
+            <span class="duration">30 min + Q&amp;A</span>
+          </td>
+        </tr>
+
+        <!-- Coffee Break -->
+        <tr class="break-row">
+          <td>11:00 – 11:30</td>
+          <td><i class="fas fa-coffee"></i> &nbsp;Coffee Break</td>
+        </tr>
+
+        <!-- Block 2 -->
+        <tr>
+          <td>11:30 – 12:15</td>
+          <td>
+            <span class="session-block-label">Block 2 — Talk 3</span>
+            <strong class="session-title tbd">Speaker TBD</strong>
+            <em class="talk-title tbd">Title TBD</em>
+            <span class="duration">30 min + Q&amp;A</span>
+          </td>
+        </tr>
+        <tr>
+          <td>12:15 – 13:00</td>
+          <td>
+            <span class="session-block-label">Block 2 — Talk 4</span>
+            <strong class="session-title tbd">Speaker TBD</strong>
+            <em class="talk-title tbd">Title TBD</em>
+            <span class="duration">30 min + Q&amp;A</span>
+          </td>
+        </tr>
+
+        <!-- Lunch -->
+        <tr class="break-row">
+          <td>13:00 – 14:00</td>
+          <td><i class="fas fa-utensils"></i> &nbsp;Lunch Break</td>
+        </tr>
+
+        <!-- Block 3 -->
+        <tr>
+          <td>14:00 – 14:45</td>
+          <td>
+            <span class="session-block-label">Block 3 — Talk 5</span>
+            <strong class="session-title tbd">Speaker TBD</strong>
+            <em class="talk-title tbd">Title TBD</em>
+            <span class="duration">30 min + Q&amp;A</span>
+          </td>
+        </tr>
+        <tr>
+          <td>14:45 – 15:30</td>
+          <td>
+            <span class="session-block-label">Block 3 — Talk 6</span>
+            <strong class="session-title tbd">Speaker TBD</strong>
+            <em class="talk-title tbd">Title TBD</em>
+            <span class="duration">30 min + Q&amp;A</span>
+          </td>
+        </tr>
+
+        <!-- Coffee Break -->
+        <tr class="break-row">
+          <td>15:30 – 16:00</td>
+          <td><i class="fas fa-coffee"></i> &nbsp;Coffee Break</td>
+        </tr>
+
+        <!-- Block 4 -->
+        <tr>
+          <td>16:00 – 16:45</td>
+          <td>
+            <span class="session-block-label">Block 4 — Talk 7</span>
+            <strong class="session-title tbd">Speaker TBD</strong>
+            <em class="talk-title tbd">Title TBD</em>
+            <span class="duration">30 min + Q&amp;A</span>
+          </td>
+        </tr>
+        <tr>
+          <td>16:45 – 17:30</td>
+          <td>
+            <span class="session-block-label">Block 4 — Talk 8</span>
+            <strong class="session-title tbd">Speaker TBD</strong>
+            <em class="talk-title tbd">Title TBD</em>
+            <span class="duration">30 min + Q&amp;A</span>
+          </td>
+        </tr>
+
+        <!-- Closing -->
+        <tr>
+          <td>17:30 – 17:45</td>
+          <td>
+            <strong class="session-title">Closing &amp; Inspirational Words</strong>
+            <span class="speakers">Noa Garcia</span>
+          </td>
+        </tr>
+
+        <!-- Dinner -->
+        <tr class="dinner-row">
+          <td>19:00</td>
+          <td><i class="fas fa-glass-cheers"></i> &nbsp;Tutorial Organiser Dinner</td>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+  <div class="footer-container"></div>
+</body>
+
+</html>
